@@ -1,24 +1,21 @@
 # Dépôt de Code pour Mémoire de Master 2 en Intelligence Artificielle
 
-Bienvenue dans le dépôt de code associé à mon mémoire de Master 2 en Intelligence Artificielle. Ce dépôt contient l'implémentation des algorithmes, les données, les expériences, et les résultats de ma recherche.
+Bienvenue dans le dépôt de code associé à mon mémoire de Master 2 en Intelligence Artificielle. Ce dépôt est une vitrine des travaux pratiques réalisés dans le cadre de ma recherche, focalisée sur la conception et implémentation d’un assistant IA pour l’amélioration de l’expérience utilisateur sur Zekin.
 
 ## Structure du Dépôt
 
-- **Notebooks de Jupyter :** Explorez nos notebooks pour une compréhension détaillée des étapes de prétraitement des données, de l'implémentation des modèles, et de l'analyse des résultats.
-  
-- **Modèles :** Consultez les scripts Python pour chaque modèle développé, couvrant une gamme d'approches en apprentissage supervisé, non supervisé, et en traitement du langage naturel (NLP).
+Le dépôt est organisé en plusieurs répertoires et fichiers principaux, chacun jouant un rôle spécifique dans le projet :
 
-- **Données :** Retrouvez les ensembles de données utilisés dans nos expériences, accompagnés des scripts pour leur prétraitement et leur chargement.
+- **classification/** : Ce dossier abrite les scripts et les ensembles de données relatifs aux algorithmes de classification. Ici, vous trouverez tous les différents modèles de classification développés dans le cadre de ma recherche.
 
-- **Résultats :** Découvrez les résultats de nos expériences, y compris les métriques de performance, les graphiques et les visualisations.
+- **rasa/** : Contient les fichiers de configuration nécessaires pour le chatbot Rasa, y compris les définitions des intents, des stories et des actions personnalisées. 
 
-## Utilisation
+- **Dockerfile** : Fournit les instructions pour construire l'image Docker de ce projet, facilitant ainsi le déploiement et l'exécution dans différents environnements sans se soucier des dépendances.
 
-- **Reproduction :** Vous pouvez reproduire nos expériences en exécutant les scripts Python et les notebooks de Jupyter, en suivant les instructions fournies.
-  
-- **Exploration :** Explorez nos données, modèles, et résultats pour une meilleure compréhension de notre travail.
+- **main.py** : Le script principal qui sert de point d'entrée pour démarrer l'application. Que vous souhaitiez lancer le processus de classification ou mettre en route le chatbot, tout commence ici.
 
-- **Contributions :** Nous accueillons les contributions et les suggestions d'amélioration. N'hésitez pas à ouvrir des issues ou à soumettre des pull requests.
+- **requirements.txt** : Liste toutes les dépendances Python nécessaires pour exécuter les différents composants du projet. 
+
 
 ## Remerciements
 
