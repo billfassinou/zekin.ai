@@ -1,0 +1,108 @@
+version: "3.1"
+
+rules:
+- rule: Handle greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Provide general information about Zekin
+  steps:
+  - intent: general_information_request
+  - action: utter_general_information_request
+
+- rule: Handle Zekin account creation request
+  steps:
+  - intent: zekin_request
+  - action: utter_zekin_request
+
+- rule: Handle authorization request for Zekin
+  steps:
+  - intent: authorization_request
+  - action: utter_authorization_request
+
+- rule: Handle account confirmation request
+  steps:
+  - intent: account_confirmation_request
+  - action: utter_account_confirmation_request
+
+- rule: Handle login issue request
+  steps:
+  - intent: login_issue_request
+  - action: utter_login_issue_request
+
+- rule: Handle view results issue request
+  steps:
+  - intent: view_results_issue_request
+  - action: utter_view_results_issue_request
+
+- rule: Handle registering withdrawal number request
+  steps:
+  - intent: registering_withdrawal_number_request
+  - action: utter_registering_withdrawal_number_request
+
+- rule: Handle making withdrawal request
+  steps:
+  - intent: making_withdrawal_request
+  - action: utter_making_withdrawal_request
+
+- rule: Handle voting difficulty request
+  steps:
+  - intent: voting_difficulty_request
+  - action: utter_voting_difficulty_request
+
+- rule: Handle displaying voting form request
+  steps:
+  - intent: displaying_voting_form_request
+  - action: utter_displaying_voting_form_request
+
+- rule: Handle status votes request
+  steps:
+  - intent: status_votes_request
+  - action: utter_status_votes_request
+
+- rule: Handle changing standard number vote request
+  steps:
+  - intent: changing_standard_number_vote_request
+  - action: utter_changing_standard_number_vote_request
+
+- rule: Handle credit card issues request
+  steps:
+  - intent: credit_card_issues_request
+  - action: utter_credit_card_issues_request
+
+- rule: Handle verifying number votes request
+  steps:
+  - intent: verifying_number_votes_request
+  - action: utter_verifying_number_votes_request
+
+- rule: Handle incorrect settings request
+  steps:
+  - intent: incorrect_settings_request
+  - action: utter_incorrect_settings_request
+
+- rule: Handle insufficient balance request
+  steps:
+  - intent: insufficient_balance_request
+  - action: utter_insufficient_balance_request
+
+- rule: Handle success request
+  steps:
+  - intent: success_request
+  - action: utter_success_request
+
+- rule: Handle transaction cancel request
+  steps:
+  - intent: transaction_cancel_request
+  - action: utter_transaction_cancel_request
+
+- rule: Handle waiting customer payment request
+  steps:
+  - intent: waiting_customer_payment_request
+  - action: utter_waiting_customer_payment_request
+
+- rule: Handle goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: utter_gratitude

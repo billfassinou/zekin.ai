@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - greet
+  - general_information_request
+  - zekin_request
+  - authorization_request 
+  - account_confirmation_request
+  - login_issue_request
+  - view_results_issue_request
+  - registering_withdrawal_number_request
+  - making_withdrawal_request
+  - voting_difficulty_request
+  - displaying_voting_form_request
+  - status_votes_request
+  - changing_standard_number_vote_request
+  - credit_card_issues_request
+  - verifying_number_votes_request
+  - incorrect_settings_request
+  - insufficient_balance_request
+  - success_request
+  - transaction_cancel_request
+  - waiting_customer_payment_request
+  - goodbye
+
+responses:
+  utter_greet:
+  - text: "Bonjour! Je m'appelle Tassi, l'assistant virtuel de la plateforme Zekin. En quoi puis-je vous aider aujourd'hui ?"
+
+  utter_general_information_request:
+  - text: "Zekin est une plateforme de vote en ligne pour les événements culturels. Zekin représente une innovation majeure pour les organisateurs d’événements culturels à la recherche de solutions modernes pour gérer les votes. En effet, cette plateforme de vote en ligne offre une accessibilité sans précédent, permettant aux participants du monde entier de voter facilement, peu importe leur localisation. Cela élimine les contraintes géographiques qui limitaient autrefois la participation et ouvre la voie à une plus grande diversité et représentativité des opinions. La simplicité d’utilisation est également un atout de Zekin. Les utilisateurs peuvent désormais attribuer plusieurs votes dans une seule opération, ce qui réduit considérablement le temps et les efforts nécessaires pour participer. Cette facilité d’accès encourage une participation plus active et soutenue des votants, ce qui est essentiel pour dynamiser l’engagement dans les événements culturels. L’automatisation du décompte des votes via Zekin est un autre point fort. En supprimant le besoin de comptage manuel, la plateforme garantit des résultats rapides, précis et transparents. Cette efficacité contribue à la crédibilité du processus de vote et assure l’intégrité des résultats, éléments cruciaux pour la confiance des participants et des organisateurs. Enfin, la flexibilité offerte par Zekin en termes de canaux de vote et de moyens de paiement est particulièrement remarquable. Les utilisateurs peuvent choisir parmi une variété d’options pour voter et contribuer financièrement aux événements, ce qui rend la plateforme accessible à un public plus large et peut potentiellement augmenter la rentabilité des événements culturels."
+  
+  utter_zekin_request:
+  - text: "Pour créer un compte sur Zekin, veuillez contacter le support technique par WhatsApp au +22952734444 pour une assistance. Nous aurons besoin de votre registre de commerce, votre numéro d'identification fiscale et une preuve de votre profession de promoteur culturel. Cela peut être votre carte professionnelle ou culturelle."
+
+  utter_authorization_request:
+  - text: "Nous disposons des autorisations de l’Autorité de Régulation des Communications Electroniques et de la Poste (ARCEP) enregistré aux numéros : \nNo 0006-2021 DDSVA-2021-03-5WR89-IBG1A-80W8C délivré le 12/03/2021 faisant office de la déclaration de service interactifs ou non basé sur la voix ou le SMS ZEKIN ;\nNo 2021-084/ARCEP/PT/SE/DAF/DCT/DJPC/DAR/GU et No 2021-085/ARCEP/PT/SE/DAF/DCT/DJPC/DAR/GU portant attribution de ressource en numérotation à la société URBAN TECHNOLOGY"
+  
+  utter_account_confirmation_request:
+  - text: "Si vous rencontrez des difficultés pour confirmer votre compte sur Zekin, veuillez vérifier votre boîte de réception ou vos spams. Si le lien de validation n'est pas reçu ou s'il est expiré, veuillez contacter le support technique par WhatsApp au +22952734444 pour obtenir de l'aide. Nous vous aiderons à valider votre compte."
+
+  utter_login_issue_request:
+  - text: "Si vous rencontrez des difficultés à vous connecter, assurez-vous d'avoir bien saisi votre mot de passe et votre adresse e-mail correctement et que votre connexion Internet fonctionne. Si vous avez oublié le mot de passe, vous pouvez le réinitialiser en cliquant sur https://zekin.me/fr/reset-password. Si cela ne résout pas votre problème, veuillez contacter notre support technique par WhatsApp au +22952734444."
+
+  utter_view_results_issue_request:
+  - text: "Si vous êtes un nominé, pour consulter les résultats des votes sur Zekin, deux possibilités s'offrent à vous. Si les résultats de vote sont publics pour l'événement, vous pouvez voir votre résultat de vote en allant sur la page de vote de l'événement (https://zekin.me/events). Vous pouvez aussi consulter votre historique de vote en vous connectant à la page nominée avec votre code secret. En cas de besoin, n'hésitez pas à nous contacter par WhatsApp au +22952734444."
+  
+  utter_registering_withdrawal_number_request:
+  - text: "Pour enregistrer votre numéro de retrait sur Zekin, suivez les instructions fournies dans votre profil utilisateur ou contactez votre gestionnaire de compte pour obtenir plus d'assistance technique."
+
+  utter_making_withdrawal_request:
+  - text: "Pour faire une demande de retrait sur Zekin, remplissez le formulaire de demande disponible dans votre compte dans la rubrique 'Paiement' et suivez les instructions.Cela ne nécessite aucun frais. C'est gratuit. Plusieurs moyens de retrait sont disponible : Mobile money, transfert bancaire, western union. Votre demande est traité au plus en 48h ouvrable. Contactez votre gestionnaire de compte pour obtenir plus d'assistance technique."
+
+  utter_voting_difficulty_request:
+  - text: "Si vous rencontrez des difficultés à voter sur Zekin, veuillez vérifier votre connexion Internet, vous assurer que vous disposez d'un solde suffisant sur votre compte mobile ou carte bancaire, puis réessayer en cliquant sur le lien de vote de votre nominé ou en écrivant par wgatsapp au +22990181817."
+
+  utter_displaying_voting_form_request:
+  - text: "Pour accéder au formulaire de vote sur Zekin, assurez-vous d'être connecté à Internet, puis cliquez sur le lien de vote de votre nominé. Si vous connaissez son mot clé, vous pouvez également voter pour lui en envoyant un message WhatsApp au numéro +22990181817. Notre système intelligent vous guidera. Vous pouvez également voter pour lui en accédant à la page de vote de l'événement ici : https://zekin.me/events."
+
+  utter_status_votes_request:
+  - text: "Pour vérifier le statut de vos votes sur Zekin, rendez-vous sur https://zekin.me/ et cliquez sur la rubrique 'Vérifier un vote'. Vous aurez besoin de renseigner le numéro de téléphone et l'ID de la transaction pour effectuer la vérification."
+
+  utter_changing_standard_number_vote_request:
+  - text: "Pour changer le nombre de votes par défaut dans le formulaire de vote en ligne, cliquez simplement dans le champ, effacez le nombre par défaut et saisissez le nombre de votes souhaité. Le minimum est bien évidement 1 vote et le maximum est ce que votre solde disponible vous permet d'accorder à votre nominé."
+
+  utter_credit_card_issues_request:
+  - text: "Seules les cartes bancaires internationales telles que VISA et MASTERCARD sont acceptées. Toutefois, si vous utilisez l'une de ces cartes et que le problème persiste, il se peut que l'agrégateur de paiement rencontre des perturbations ou qu'il y ait un flottement de la connexion internet. Veuillez vérifier votre connexion internet et réessayer s'il vous plaît."
+
+  utter_verifying_number_votes_request:
+  - text: "Pour vérifier le nombre de votes des candidats sur Zekin, rendez-vous sur https://zekin.me/events, puis cliquez sur le nom de votre événement. Si le promoteur a rendu les résultats publics, vous verrez alors affiché le nombre de votes des candidats. Sinon, veuillez contacter le promoteur culturel. \n Si vous êtes un promoteur culturel, une fois connecté à votre espace sur Zekin, veuillez cliquer sur 'Vote en ligne', puis 'Résultats'. Vous aurez accès résultats de votes de tous les nominés."
+
+  utter_incorrect_settings_request:
+  - text: "Nous avons bien pris note de votre requête. Notre équipe de support technique est déjà à pied d'œuvre pour régler le problème. Nous vous contacterons dès que la situation sera réglée. Merci pour votre patience."
+
+  utter_insufficient_balance_request:
+  - text: "Vérifiez que vous disposez d'un solde suffisant dans votre compte pour accorder le nombre de votes souhaité. Vous pouvez soit réduire le nombre de votes pour correspondre à votre solde, soit recharger votre compte et réessayer."
+
+  utter_success_request:
+  - text: "Merci d'avoir soutenu votre artiste. Vous contribuez grandement à la promotion de la culture africaine à travers le monde."
+
+  utter_transaction_cancel_request:
+  - text: "Les votes pour cet événement sont payants. Assurez-vous d'avoir suffisamment de solde pour accorder votre vote. Votre artiste compte sur vous pour se faire connaître dans le monde entier. Pour ce faire, vous pouvez commencer par exemple à lui accorder un minimul de vote."
+
+  utter_waiting_customer_payment_request:
+  - text: "Notre culture mérite d'être promue à travers le monde. En soutenant nos artistes, vous participez activement à cette promotion. Nous comptons sur votre soutien continu pour cette noble cause."
+
+  utter_ask_continue_issue:
+  - text: "Rencontrez-vous d'autres problèmes ou avez-vous besoin de plus d'informations ?"
+
+  utter_acknowledge_issue:
+  - text: "Je prends note de votre problème. Je vais essayer de vous aider à le résoudre."
+
+  utter_gratitude:
+  - text: "N'hésitez pas à me contacter si vous avez d'autres questions."
+
+  utter_goodbye:
+  - text: "Au revoir ! Passez une bonne journée !"
+
+
+session_config:
+  session_expiration_time: 60
+  arry_over_slots_to_new_session: true

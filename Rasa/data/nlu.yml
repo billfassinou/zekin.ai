@@ -1,0 +1,480 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Hey
+    - cc
+    - bjr
+    - Bonsoir
+    - bsr
+    - coucou
+    - Hello
+    - Coucou Zekin
+    - Hi Zekin
+    
+- intent: general_information_request
+  examples: |
+    - Zekin, c'est quoi ?
+    - Quelle est la fonction de Zekin ?
+    - Pouvez-vous m'expliquer ce qu'est Zekin ?
+    - Je veux en savoir plus sur Zekin
+    - Parlez-moi de Zekin
+    - Qu'est-ce que Zekin fait ?
+    - Quel est le but de Zekin ?
+    - Donnez-moi un aperçu de Zekin
+    - Que fait exactement Zekin ?
+    - Je suis curieux à propos de Zekin
+    - Expliquez-moi Zekin en détail
+    - Zekin, ça sert à quoi exactement ?
+    - Pouvez-vous me dire ce que Zekin propose ?
+    - Pourquoi devrais-je utiliser Zekin ?
+    - En quoi Zekin est-il différent des autres ?
+    - Comment Zekin peut-il m'aider ?
+    - Zekin est-il utile ?
+    - Quels sont les avantages de Zekin ?
+    - Je veux comprendre le concept de Zekin
+    - Quels sont les services offerts par Zekin ?
+
+- intent: zekin_request
+  examples: |
+    - Comment puis-je créer mon compte sur Zekin ?
+    - Quelle est la procédure pour s'inscrire sur Zekin ?
+    - Je veux m'inscrire sur Zekin, que dois-je faire ?
+    - Comment démarrer avec Zekin ?
+    - Pouvez-vous me guider pour créer un compte sur Zekin ?
+    - Quelles sont les étapes pour rejoindre Zekin ?
+    - Comment puis-je commencer avec Zekin ?
+    - Comment s'inscrire sur Zekin ?
+    - Je suis intéressé par Zekin, par où commencer ?
+    - Quels sont les premiers pas sur Zekin ?
+    - Est-il facile de s'inscrire sur Zekin ?
+    - J'ai besoin d'aide pour créer mon compte Zekin
+    - Combien de temps prend l'inscription sur Zekin ?
+    - Comment puis-je personnaliser mon compte Zekin ?
+    - Zekin propose-t-il une version d'essai ?
+    - Comment puis-je accéder à mon compte Zekin après l'avoir créé ?
+    - Puis-je utiliser mon compte Zekin sur plusieurs appareils ?
+    - Y a-t-il des frais pour créer un compte Zekin ?
+    - Zekin propose-t-il une assistance à l'inscription ?
+    - Quelles informations sont nécessaires pour créer un compte Zekin ?
+
+- intent: authorization_request 
+  examples: |
+    - Zekin a-t-il les autorisations nécessaires pour organiser les votes en ligne ?
+    - Est-ce que Zekin est autorisé à organiser des votes en ligne ?
+    - Quelles sont les autorisations de Zekin pour les votes en ligne ?
+    - Pouvez-vous confirmer si Zekin dispose des autorisations requises pour ses services en ligne ?
+    - Est-ce que Zekin est légalement autorisé à gérer des opérations de vote en ligne ?
+    - A-t-on vérifié si Zekin possède toutes les autorisations nécessaires pour ses services en ligne ?
+    - Comment puis-je savoir si Zekin est approuvé pour les opérations de vote en ligne ?
+    - Zekin est-il en conformité avec les réglementations pour organiser des votes en ligne ?
+    - Quels documents prouvent que Zekin a les autorisations appropriées pour ses services ?
+    - Où puis-je trouver des informations sur les autorisations légales de Zekin pour les votes en ligne ?
+    - Comment puis-je vérifier si Zekin est habilité à organiser des votes en ligne ?
+    - Quelles sont les preuves de l'autorisation de Zekin pour les opérations de vote en ligne ?
+    - Zekin a-t-il reçu l'approbation nécessaire pour ses activités de vote en ligne ?
+    - Comment puis-je être sûr que Zekin est approuvé pour gérer des votes en ligne ?
+    - Où puis-je trouver des détails sur les autorisations légales de Zekin pour ses services en ligne ?
+    - Zekin est-il officiellement autorisé à gérer les votes en ligne ?
+    - Existe-t-il des certificats ou des licences confirmant l'autorisation de Zekin pour les votes en ligne ?
+    - Quelles sont les preuves que Zekin est qualifié pour organiser des votes en ligne ?
+    - Où puis-je consulter les autorisations accordées à Zekin pour ses activités de vote en ligne ?
+    - Avez-vous des informations sur les autorisations légales de Zekin pour les services en ligne ?
+
+- intent: account_confirmation_request
+  examples: |
+    - Je rencontre des difficultés pour confirmer mon compte. Que dois-je faire?
+    - Comment puis-je confirmer mon compte sur Zekin ?
+    - Que faire si je ne peux pas confirmer mon compte sur Zekin ?
+    - Mon compte Zekin n'est pas confirmé, que puis-je faire ?
+    - Je n'arrive pas à vérifier mon compte sur Zekin, que faire ?
+    - Comment valider mon compte sur Zekin ?
+    - J'ai besoin d'aide pour confirmer mon compte Zekin
+    - Mon compte Zekin ne peut pas être confirmé, comment résoudre cela ?
+    - Quelles sont les étapes pour confirmer mon compte sur Zekin ?
+    - Le lien de confirmation pour mon compte Zekin ne fonctionne pas, que faire ?
+    - Je n'ai pas reçu l'e-mail de confirmation pour mon compte Zekin
+    - Est-ce normal que la confirmation de mon compte Zekin prenne du temps ?
+    - Puis-je utiliser mon compte Zekin sans le confirmer ?
+    - Comment puis-je contacter le support pour obtenir de l'aide avec la confirmation de mon compte Zekin ?
+    - Combien de temps faut-il pour confirmer un compte sur Zekin ?
+    - Que se passe-t-il si je ne reçois pas l'e-mail de confirmation pour mon compte Zekin ?
+    - Mon compte Zekin a été suspendu après la tentative de confirmation, que faire ?
+    - Est-il possible de renvoyer l'e-mail de confirmation pour mon compte Zekin ?
+    - Mon compte Zekin a été confirmé mais je ne peux toujours pas accéder à certaines fonctionnalités,
+
+
+- intent: login_issue_request
+  examples: |
+    - Je ne peux pas me connecter à mon compte. Comment puis-je résoudre ce problème?
+    - Je ne peux pas me connecter à mon espace nominé. Que dois-je vérifier?
+    - Comment puis-je récupérer mon mot de passe pour me connecter à Zekin ?
+    - Mon identifiant Zekin ne fonctionne pas, que faire ?
+    - Comment réinitialiser mon mot de passe sur Zekin ?
+    - Je ne parviens pas à me connecter à Zekin, que puis-je faire ?
+    - J'ai oublié mon mot de passe Zekin, comment le récupérer ?
+    - Mon compte Zekin est bloqué, comment le débloquer ?
+    - Je rencontre des problèmes de connexion à Zekin, que faire ?
+    - Comment puis-je accéder à mon compte Zekin si j'ai perdu mon mot de passe ?
+    - Je ne peux pas me connecter à mon compte Zekin, que se passe-t-il ?
+    - J'ai saisi le bon identifiant et mot de passe mais je ne peux pas me connecter, que faire ?
+    - Je reçois un message d'erreur lorsque j'essaie de me connecter à Zekin, que signifie-t-il ?
+    - Est-ce que Zekin est en panne ? Je ne peux pas accéder à mon compte.
+    - Mon compte Zekin a été piraté, que dois-je faire ?
+    - Je ne reçois pas le code de vérification lorsque j'essaie de me connecter à Zekin, que faire ?
+    - Y a-t-il des problèmes de connexion connus avec Zekin en ce moment ?
+    - Je suis sûr que mes identifiants sont corrects, mais je ne peux toujours pas me connecter, pourquoi ?
+    - Je ne peux pas me connecter même après avoir changé mon mot de passe, que se passe-t-il ?
+
+
+- intent: view_results_issue_request
+  examples: |
+    - Je ne trouve pas les résultats des votes. Comment puis-je les consulter?
+    - Où puis-je trouver les résultats des votes sur Zekin ?
+    - Comment accéder aux résultats des votes sur Zekin ?
+    - Les résultats des votes ne s'affichent pas, que faire ?
+    - Pourquoi les résultats des votes ne sont-ils pas visibles sur Zekin ?
+    - J'ai voté mais je ne vois pas les résultats, que se passe-t-il ?
+    - Les résultats du vote ne sont pas à jour, que faire ?
+    - Est-ce que les résultats des votes sont publiés en temps réel sur Zekin ?
+    - J'ai voté mais je ne trouve pas où vérifier les résultats, pouvez-vous m'aider ?
+    - Où puis-je trouver un résumé des résultats des votes sur Zekin ?
+    - Je n'arrive pas à voir les résultats du vote, quel est le problème ?
+    - Les résultats des votes ne s'affichent pas correctement sur Zekin, que faire ?
+    - Les résultats des votes sont-ils anonymes sur Zekin ?
+    - Les résultats des votes sont-ils visibles pour tout le monde sur Zekin ?
+    - Y a-t-il un délai pour afficher les résultats des votes sur Zekin ?
+    - Les résultats des votes sont-ils consultables après la fin du vote sur Zekin ?
+    - Où puis-je trouver un historique des résultats des votes précédents sur Zekin ?
+    - Pourquoi les résultats des votes ne sont-ils pas disponibles immédiatement après la fin du vote sur Zekin ?
+    - Je ne peux pas voir les résultats du vote sur mon appareil mobile, est-ce normal ?
+
+
+- intent: registering_withdrawal_number_request
+  examples: |
+    - Je n'arrive pas à enregistrer mon numéro de retrait. Que dois-je faire?
+    - Comment enregistrer un numéro de retrait sur Zekin ?
+    - Que faire si je rencontre des problèmes lors de l'enregistrement de mon numéro de retrait sur Zekin ?
+    - Le système ne prend pas en compte mon numéro de retrait, que puis-je faire ?
+    - Mon numéro de retrait est invalide sur Zekin, que faire ?
+    - J'ai entré mon numéro de retrait mais il n'est pas enregistré, pourquoi ?
+    - Est-ce que mon numéro de retrait est sécurisé sur Zekin ?
+    - Comment puis-je vérifier si mon numéro de retrait a été enregistré avec succès ?
+    - Y a-t-il des caractères spéciaux à éviter lors de l'enregistrement du numéro de retrait sur Zekin ?
+    - Quelles sont les exigences pour un numéro de retrait valide sur Zekin ?
+    - J'ai suivi toutes les étapes pour enregistrer mon numéro de retrait mais ça ne fonctionne pas, que faire ?
+    - Est-ce que le numéro de retrait est nécessaire pour retirer des fonds sur Zekin ?
+    - Mon numéro de retrait a été refusé par Zekin, que se passe-t-il ?
+    - Puis-je utiliser un numéro de retrait déjà enregistré sur un autre compte Zekin ?
+    - Quelles informations sont nécessaires pour enregistrer mon numéro de retrait sur Zekin ?
+    - Comment puis-je corriger une erreur dans mon numéro de retrait sur Zekin ?
+    - Pourquoi Zekin demande-t-il un numéro de retrait ?
+    - J'ai perdu mon numéro de retrait, comment puis-je le récupérer ?
+    - Comment puis-je retirer mes gains sur Zekin sans numéro de retrait ?
+    - Quelles sont les options si je ne possède pas de numéro de retrait ?
+
+
+- intent: making_withdrawal_request
+  examples: |
+    - Comment puis-je faire une demande de retrait sur Zekin?
+    - Quelle est la procédure pour demander un retrait sur Zekin ?
+    - Où puis-je trouver le formulaire de demande de retrait sur Zekin ?
+    - Je veux retirer des fonds de Zekin, comment procéder ?
+    - Comment puis-je retirer de l'argent de mon compte Zekin ?
+    - Est-ce que Zekin permet les retraits d'argent ?
+    - J'ai besoin de récupérer mes fonds sur Zekin, que faire ?
+    - Zekin offre-t-il des options de retrait d'argent ?
+    - Quels sont les moyens de retrait disponibles sur Zekin ?
+    - Comment puis-je retirer mes gains de Zekin ?
+    - Quelle est la politique de retrait de Zekin ?
+    - Y a-t-il des frais associés aux retraits sur Zekin ?
+    - Est-ce que les retraits sur Zekin sont rapides ?
+    - Puis-je annuler une demande de retrait sur Zekin ?
+    - Est-il sécurisé de retirer de l'argent de Zekin ?
+    - Comment vérifier le statut de ma demande de retrait sur Zekin ?
+    - Combien de temps faut-il pour que le retrait soit traité sur Zekin ?
+    - Zekin impose-t-il des limites de retrait ?
+    - Que faire si mon retrait sur Zekin est retardé ?
+    - Comment puis-je obtenir de l'aide si j'ai des problèmes avec un retrait sur Zekin ?
+
+
+- intent: voting_difficulty_request
+  examples: |
+    - J'ai des difficultés à voter sur Zekin. Pouvez-vous m'aider?
+    - Comment puis-je voter sur Zekin si j'ai des problèmes ?
+    - Que faire si je rencontre des difficultés lors du vote sur Zekin ?
+    - Je ne parviens pas à voter correctement sur Zekin, que dois-je faire ?
+    - Pourquoi je ne peux pas voter sur Zekin ?
+    - Zekin ne me permet pas de voter, que se passe-t-il ?
+    - J'ai rencontré un problème lors du vote sur Zekin, comment le résoudre ?
+    - Comment puis-je m'assurer que mon vote sur Zekin est comptabilisé ?
+    - Y a-t-il des étapes spéciales à suivre pour voter sur Zekin ?
+    - Je ne comprends pas comment voter sur Zekin, pouvez-vous m'expliquer ?
+    - Quels sont les problèmes courants lors du vote sur Zekin ?
+    - Mon vote sur Zekin a été refusé, pourquoi ?
+    - Est-ce que Zekin offre un support pour les problèmes de vote ?
+    - Que faire si je suis incapable de terminer le processus de vote sur Zekin ?
+    - Je ne trouve pas l'option de vote sur Zekin, que faire ?
+
+- intent: displaying_voting_form_request
+  examples: |
+    - Le formulaire de vote ne s'affiche pas correctement. Que dois-je faire?
+    - Comment puis-je accéder au formulaire de vote sur Zekin ?
+    - Pourquoi le formulaire de vote ne fonctionne-t-il pas sur Zekin ?
+    - Le formulaire de vote sur Zekin est-il compatible avec tous les navigateurs ?
+    - Je ne peux pas trouver le formulaire de vote sur Zekin, que se passe-t-il ?
+    - Comment actualiser le formulaire de vote sur Zekin ?
+    - Zekin me demande de remplir un formulaire de vote, où est-il ?
+    - Je ne vois pas l'option de vote sur Zekin, comment puis-je la trouver ?
+    - Le formulaire de vote sur Zekin ne répond pas, que faire ?
+    - Le formulaire de vote sur Zekin est-il optimisé pour les appareils mobiles ?
+    - Est-il possible de voter sans utiliser le formulaire sur Zekin ?
+    - Zekin propose-t-il des tutoriels pour remplir le formulaire de vote ?
+    - Le formulaire de vote sur Zekin a-t-il des exigences spécifiques ?
+    - Pourquoi je ne peux pas accéder au formulaire de vote sur Zekin ?
+    - Le formulaire de vote sur Zekin est-il sécurisé ?
+    - Comment puis-je corriger une erreur dans le formulaire de vote sur Zekin ?
+    - Est-ce que je peux sauvegarder mon vote et le soumettre plus tard sur Zekin ?
+    - Le formulaire de vote sur Zekin est-il facile à utiliser ?
+    - Y a-t-il des étapes supplémentaires après avoir rempli le formulaire de vote sur Zekin ?
+    - Comment puis-je obtenir de l'aide si j'ai des problèmes avec le formulaire de vote sur Zekin ?
+
+
+- intent: status_votes_request
+  examples: |
+    - Je ne comprends pas le statut de mes votes. Comment puis-je le vérifier?
+    - Où puis-je vérifier le statut de mes votes sur Zekin ?
+    - Comment puis-je vérifier si mon vote a été pris en compte dans les résultats ?
+    - Comment savoir si mes votes ont été enregistrés avec succès sur Zekin ?
+    - Les votes que j'ai passés sur Zekin ont-ils été pris en compte ?
+    - Est-ce que Zekin a enregistré mes votes ?
+    - Comment puis-je vérifier si mon vote sur Zekin a été validé ?
+    - Zekin a-t-il confirmé la réception de mes votes ?
+    - Quel est le statut de mes votes sur Zekin ?
+    - Où puis-je consulter l'historique de mes votes sur Zekin ?
+    - Mes votes sur Zekin ont-ils été comptabilisés ?
+    - Comment puis-je accéder à mes votes précédents sur Zekin ?
+    - Est-ce que Zekin m'informe si mes votes ont été rejetés ?
+    - Qu'est-ce que le statut "en attente" signifie sur Zekin ?
+    - Comment puis-je savoir si mes votes sur Zekin sont encore en attente ?
+    - Y a-t-il un moyen de vérifier si mes votes sur Zekin sont valides ?
+    - Est-ce que Zekin envoie des confirmations par e-mail pour les votes ?
+    - Comment puis-je être sûr que mes votes ont été enregistrés correctement sur Zekin ?
+    - Où puis-je trouver les détails de mes votes précédents sur Zekin ?
+    - Zekin envoie-t-il des notifications pour les mises à jour du statut des votes ?
+    - Que signifie le statut "traitement" sur Zekin ?
+
+
+- intent: changing_standard_number_vote_request
+  examples: |
+    - Je souhaite modifier le nombre de votes standard. Comment puis-je le faire?
+    - Comment ajuster le nombre de votes standard sur Zekin ?
+    - Est-il possible de changer le nombre de votes par défaut sur Zekin ?
+    - Puis-je personnaliser le nombre de votes standard sur Zekin ?
+    - Comment puis-je augmenter ou diminuer le nombre de votes standard sur Zekin ?
+    - Où puis-je trouver les paramètres pour modifier le nombre de votes standard sur Zekin ?
+    - Y a-t-il des limites pour changer le nombre de votes standard sur Zekin ?
+    - Zekin offre-t-il une flexibilité pour le nombre de votes standard ?
+    - Est-ce que je peux changer le nombre de votes standard après avoir voté sur Zekin ?
+    - Comment puis-je revenir au nombre de votes standard initial sur Zekin ?
+    - Quels sont les effets de modifier le nombre de votes standard sur Zekin ?
+    - Pourquoi je ne peux pas changer le nombre de votes standard sur Zekin ?
+    - Zekin propose-t-il des options pour personnaliser le nombre de votes standard ?
+    - Quelle est la plage de modification pour le nombre de votes standard sur Zekin ?
+    - Puis-je changer le nombre de votes standard pour différents événements sur Zekin ?
+    - Y a-t-il des coûts associés à la modification du nombre de votes standard sur Zekin ?
+    - Comment savoir si ma demande de changement de nombre de votes standard a été acceptée sur Zekin ?
+    - Zekin permet-il de revenir en arrière après avoir modifié le nombre de votes standard ?
+    - Comment puis-je récupérer les votes non utilisés après avoir réduit le nombre de votes standard sur Zekin ?
+    - Que faire si je souhaite augmenter le nombre de votes standard après avoir épuisé ma allocation sur Zekin ?
+
+
+- intent: credit_card_issues_request
+  examples: |
+    - Ma carte bancaire ne passe pas pour valider mon vote. Que dois-je vérifier?
+    - Pourquoi ma carte bancaire ne fonctionne-t-elle pas sur Zekin ?
+    - Comment puis-je résoudre les problèmes avec ma carte bancaire sur Zekin ?
+    - J'ai des difficultés à utiliser ma carte bancaire pour payer sur Zekin, que faire ?
+    - Pourquoi Zekin refuse ma carte bancaire lors de la vérification du vote ?
+    - Que faire si ma carte bancaire est rejetée lors de la tentative de vote sur Zekin ?
+    - Comment puis-je savoir si ma carte bancaire est acceptée sur Zekin ?
+    - Zekin prend-il en charge tous les types de cartes bancaires pour les votes ?
+    - Est-ce que Zekin accepte les cartes bancaires étrangères ?
+    - Pourquoi ma carte bancaire est-elle déclinée sur Zekin ?
+    - Y a-t-il des restrictions de carte bancaire pour les votes sur Zekin ?
+    - Comment puis-je résoudre les problèmes de paiement avec ma carte bancaire sur Zekin ?
+    - Quelles sont les raisons possibles du rejet de ma carte bancaire sur Zekin ?
+    - Zekin propose-t-il une assistance pour les problèmes de carte bancaire ?
+    - Comment mettre à jour les informations de ma carte bancaire sur Zekin ?
+    - Est-ce que Zekin stocke les détails de ma carte bancaire après la transaction ?
+    - Que faire si ma carte bancaire expire lors du processus de vote sur Zekin ?
+    - Est-il sûr de saisir les informations de ma carte bancaire sur Zekin ?
+    - Comment puis-je annuler une transaction avec ma carte bancaire sur Zekin ?
+    - Quelles sont les précautions à prendre lors de l'utilisation d'une carte bancaire sur Zekin ?
+
+
+- intent: verifying_number_votes_request
+  examples: |
+    - Comment puis-je vérifier le nombre de votes obtenus par tous les candidats de l'événement?
+    - Où puis-je trouver le total des votes pour chaque candidat sur Zekin ?
+    - Existe-t-il un moyen de vérifier le nombre total de votes pour l'événement sur Zekin ?
+    - Comment puis-je connaître le classement des candidats basé sur les votes sur Zekin ?
+    - Est-ce que Zekin offre des statistiques sur les votes pour chaque candidat ?
+    - Comment puis-je accéder aux résultats des votes pour un événement spécifique sur Zekin ?
+    - Zekin fournit-il des rapports détaillés sur les résultats des votes ?
+    - Où puis-je consulter les chiffres officiels des votes sur Zekin ?
+    - Y a-t-il un moyen de suivre les votes en direct sur Zekin ?
+    - Est-ce que Zekin actualise les résultats des votes en temps réel ?
+    - Où puis-je trouver les résultats des votes après la fin de l'événement sur Zekin ?
+    - Zekin envoie-t-il des notifications lorsque les résultats des votes sont disponibles ?
+    - Comment puis-je obtenir une confirmation officielle des résultats des votes sur Zekin ?
+    - Est-ce que Zekin garantit l'exactitude des résultats des votes ?
+    - Y a-t-il une période d'attente avant la publication des résultats des votes sur Zekin ?
+    - Comment puis-je accéder à l'historique des résultats des votes sur Zekin ?
+    - Est-il possible de voir les détails de chaque vote individuel sur Zekin ?
+    - Zekin offre-t-il des analyses approfondies sur les tendances de vote ?
+    - Comment puis-je obtenir des informations sur la participation globale aux votes sur Zekin ?
+    - Y a-t-il des outils de visualisation des données de vote disponibles sur Zekin ?
+
+
+- intent: incorrect_settings_request
+  examples: |
+    - Je veux voter, mais je n'y arrive pas. Hors tout semble normal
+    - Tout semble correct, mais je ne peux pas voter. Que se passe-t-il ?
+    - Je ne peux pas voter même si les paramètres semblent corrects. Que puis-je faire ?
+    - Les paramètres semblent bons, mais je ne parviens pas à voter. Pourquoi ?
+    - Je rencontre des problèmes pour voter malgré les paramètres corrects. Que puis-je vérifier ?
+    - Les réglages semblent corrects, mais je suis incapable de voter. Que devrais-je faire ?
+    - Je ne comprends pas pourquoi je ne peux pas voter même si tout semble en ordre.
+    - Les paramètres semblent normaux, mais je suis bloqué lors du vote. Quel est le problème ?
+    - Comment puis-je résoudre un problème de vote lorsque les paramètres semblent corrects ?
+    - J'ai vérifié mes paramètres, mais je ne peux toujours pas voter. Que se passe-t-il ?
+    - Malgré les réglages appropriés, je ne peux pas voter. Que puis-je faire pour remédier à cela ?
+    - Je ne peux pas valider mon vote même si tout est configuré correctement. Pourquoi ?
+    - Je ne peux pas voter, même si les paramètres sont corrects. Que devrais-je faire ?
+    - Je suis confronté à des difficultés pour voter, même si tout semble correct. Que puis-je vérifier ?
+    - J'essaie de voter, mais quelque chose ne va pas malgré les bons paramètres.
+    - Je ne peux pas voter, même si j'ai vérifié les paramètres plusieurs fois. Que faire ?
+    - Les paramètres sont corrects, mais je ne peux pas confirmer mon vote. Pourquoi ?
+    - Je suis bloqué lors du vote, bien que tous les paramètres soient corrects. Que puis-je faire ?
+    - Malgré les réglages corrects, je suis incapable de confirmer mon vote. Que se passe-t-il ?
+    - Je rencontre des problèmes de vote malgré les paramètres corrects. Comment puis-je résoudre cela ?
+    - Tout semble en ordre, mais je suis incapable de voter. Que puis-je vérifier ?
+
+
+- intent: insufficient_balance_request
+  examples: |
+    - Je veux voter, mais le prompt ne vient pas pour que je puisse confirmer le paiement
+    - Comment résoudre le problème de solde insuffisant pour voter sur Zekin ?
+    - Que faire si je ne peux pas confirmer le paiement pour voter sur Zekin en raison d'un solde insuffisant ?
+    - Mon solde est insuffisant pour voter, que puis-je faire ?
+    - Je ne peux pas valider mon vote car mon solde est insuffisant. Que faire ?
+    - Comment puis-je ajouter des fonds pour voter si mon solde est insuffisant ?
+    - Le paiement pour voter est refusé en raison d'un solde insuffisant. Comment résoudre cela ?
+    - Que puis-je faire si je ne peux pas voter en raison d'un solde insuffisant sur mon compte ?
+    - Mon solde est trop bas pour voter, que puis-je faire pour rectifier la situation ?
+    - Comment puis-je recharger mon compte pour voter si mon solde est trop bas ?
+    - Je ne peux pas voter car mon solde est insuffisant. Comment puis-je ajouter des fonds ?
+    - Le solde de mon compte est insuffisant pour voter. Comment puis-je le recharger ?
+    - Mon compte Zekin n'a pas assez d'argent pour voter. Que puis-je faire ?
+    - Je ne peux pas voter parce que mon solde est faible. Comment puis-je résoudre cela ?
+    - Que dois-je faire si je ne peux pas voter en raison d'un solde insuffisant sur mon compte Zekin ?
+    - Mon solde est insuffisant pour confirmer mon vote. Comment puis-je ajouter des fonds ?
+    - Je suis incapable de voter car mon solde est insuffisant. Comment puis-je recharger mon compte ?
+    - Comment puis-je ajouter des fonds à mon compte Zekin pour pouvoir voter ?
+    - Que puis-je faire si je ne peux pas voter en raison d'un solde insuffisant sur mon compte ?
+    - Je ne peux pas confirmer mon vote car mon solde est bas. Comment puis-je ajouter des fonds ?
+
+
+- intent: success_request
+  examples: |
+    - J'ai pu voter, tout est ok
+    - Mon vote a été enregistré avec succès sur Zekin.
+    - Je viens de voter avec succès sur Zekin.
+    - Ma participation a été confirmée avec succès.
+    - J'ai terminé le processus de vote avec succès.
+    - Mon vote a été validé avec succès sur Zekin.
+    - J'ai réussi à voter sans aucun problème.
+    - Mon vote a été accepté sans aucune difficulté.
+    - Je suis heureux de confirmer que mon vote a été enregistré.
+    - Ma transaction de vote s'est déroulée avec succès.
+    - J'ai voté sans rencontrer aucun problème.
+    - Mon vote a été accepté sans aucun souci.
+    - Tout s'est bien passé lors de mon vote.
+    - Je suis content que mon vote ait été enregistré.
+    - Mon vote a été traité avec succès.
+    - J'ai réussi à voter comme prévu.
+    - Je suis satisfait que mon vote ait été pris en compte.
+    - Je suis heureux que mon vote ait été enregistré sans aucun souci.
+    - Mon vote a été pris en compte sans problème.
+    - Je suis ravi que ma participation au vote ait été un succès.
+
+- intent: transaction_cancel_request
+  examples: |
+    - Je ne savais pas que le vote était payant
+    - Je ne suis pas au courant qu'il faut payer pour voter sur Zekin.
+    - Pourquoi ma transaction a-t-elle été annulée lors de la tentative de vote sur Zekin ?
+    - Ma transaction pour voter a été annulée. Pourquoi ?
+    - Je ne m'attendais pas à ce que ma transaction de vote soit annulée.
+    - Je pensais que le vote était gratuit, pourquoi ma transaction a-t-elle été annulée ?
+    - Pourquoi ma transaction pour voter a-t-elle été annulée subitement ?
+    - Mon vote n'a pas été enregistré car ma transaction a été annulée. Pourquoi ?
+    - Pourquoi ma tentative de vote a-t-elle été interrompue par une annulation de transaction ?
+    - Je suis surpris que ma transaction pour voter ait été annulée. Que s'est-il passé ?
+    - Ma transaction pour voter a été interrompue. Que dois-je faire ?
+    - Comment puis-je éviter que ma transaction de vote soit annulée à l'avenir ?
+    - Je ne comprends pas pourquoi ma transaction pour voter a été annulée. Pouvez-vous m'aider ?
+    - Ma transaction pour voter a été annulée sans explication. Que puis-je faire ?
+    - Est-ce normal que ma transaction pour voter ait été annulée ?
+    - Je suis confus quant à la raison pour laquelle ma transaction pour voter a été annulée.
+    - Que dois-je faire si ma transaction pour voter est annulée ?
+    - Pourquoi ma tentative de vote a-t-elle été interrompue ?
+    - Comment puis-je résoudre les problèmes avec ma transaction de vote annulée ?
+    - Ma transaction pour voter a été annulée inopinément. Que puis-je faire pour voter ?
+
+- intent: waiting_customer_payment_request
+  examples: |
+    - Je n'ai aucune envie de voter. Vous ramasser nos sous pour rien
+    - Je n'ai pas l'intention de voter. 
+    - Je n'arrive pas à valider le vote.
+    - Je ne veux pas voter pour le moment.
+    - Voter ne m'intéresse pas actuellement.
+    - Je ne suis pas motivé pour voter maintenant.
+    - Je n'ai aucun désir de participer au vote.
+    - Le vote ne m'intéresse pas en ce moment.
+    - Je n'ai aucune envie de voter pour l'instant.
+    - Voter n'est pas une priorité pour moi.
+    - Je ne souhaite pas voter pour le moment.
+    - Je ne me sens pas concerné par le vote en ce moment.
+    - Je ne suis pas d'humeur à voter actuellement.
+    - Le vote ne me concerne pas pour l'instant.
+    - Je n'ai aucun intérêt à participer au vote.
+    - Je ne ressens aucune envie de voter maintenant.
+    - Voter ne me semble pas important pour l'instant.
+    - Je préfère ne pas voter à ce stade.
+    - Je ne suis pas enclin à voter pour le moment.
+    - Le vote ne retient pas mon attention actuellement.
+
+- intent: goodbye
+  examples: |
+    - Au revoir
+    - À bientôt
+    - Bye
+    - Merci
+    - OK
+    - Bonne journée
+    - À plus tard
+    - Ciao
+    - Salut
+    - À la prochaine
+    - Bonne soirée
+    - Prends soin de toi
+    - À demain
+    - À la revoyure
+    - Passe une bonne journée
+    - Merci et au revoir
+    - À tout à l'heure
+
