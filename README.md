@@ -8,7 +8,7 @@ Le dépôt est organisé en plusieurs répertoires et fichiers principaux, chacu
 
 - **classification/** : Ce dossier abrite les scripts et les ensembles de données relatifs aux algorithmes de classification. Ici, vous trouverez tous les différents modèles de classification développés dans le cadre de ma recherche.
 
-- **rasa/** : Contient les fichiers de configuration nécessaires pour le chatbot Rasa, y compris les définitions des intents, des stories et des actions personnalisées. 
+- **Rasa/** : Contient les fichiers de configuration nécessaires pour le chatbot Rasa, y compris les définitions des intents, des stories et des actions personnalisées. 
 
 - **Dockerfile** : Fournit les instructions pour construire l'image Docker de ce projet, facilitant ainsi le déploiement et l'exécution dans différents environnements sans se soucier des dépendances.
 
